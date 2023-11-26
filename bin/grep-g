@@ -1,0 +1,2 @@
+#! /bin/bash
+grep -inoHR --exclude-dir={node_modules,public,vendor} --exclude={*.lock}  "$1" *|more
